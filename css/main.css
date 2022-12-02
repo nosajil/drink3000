@@ -1,3 +1,74 @@
+* {
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.495);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-left: 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+nav .logo {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+}
+nav .section-nav {
+  visibility: collapse;
+}
+nav .section-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .section-nav ul li {
+  padding-right: 20px;
+  list-style: none;
+}
+nav .section-nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+nav .section-nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s;
+}
+
+.section-video {
+  height: 50vw;
+  overflow: hidden;
+  position: relative;
+}
+.section-video #myVideo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60vw;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=main.css.map */
