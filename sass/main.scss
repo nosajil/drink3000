@@ -1,3 +1,20 @@
+.section-references{
+    .container{
+        .titres-references{
+            text-transform: uppercase;
+            
+        }
+        .trois-boissons {
+            display: flex;
+            flex-direction: column;
+            div {
+                
+            }
+            img{
+                border-top: solid 1px black;
+            }
+        }
+}}
 // Breakpoints
 $xs-breakpoint: 575px;
 $sm-breakpoint: 767px;

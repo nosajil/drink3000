@@ -1,3 +1,14 @@
+.section-references .container .titres-references {
+  text-transform: uppercase;
+}
+.section-references .container .trois-boissons {
+  display: flex;
+  flex-direction: column;
+}
+.section-references .container .trois-boissons img {
+  border-top: solid 1px black;
+}
+
 * {
   box-sizing: border-box;
 }
