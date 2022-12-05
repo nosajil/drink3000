@@ -1,12 +1,156 @@
-.section-references .container .titres-references {
+.section-recettes .nos-recettes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+.section-recettes .nos-recettes div {
+  margin: 1rem;
+}
+.section-recettes .energisantes-desalterantes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.section-recettes .energisantes-desalterantes button {
+  background-color: rgb(180, 179, 179);
+  border-radius: 1rem;
+  border: none;
+  margin: 0.2rem auto;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.section-recettes .nos-cocktails {
+  padding: 0 1rem;
+  color: white;
+}
+.section-recettes .nos-cocktails .cocktails-energisants .original {
+  background-color: red;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.section-recettes .nos-cocktails .cocktails-energisants .pink-tonic {
+  background-color: rgb(190, 29, 169);
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.section-recettes .nos-cocktails .cocktails-energisants .mojito {
+  background-color: greenyellow;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.section-recettes .nos-cocktails .cocktails-desalterants .tropical {
+  background-color: orange;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.section-recettes .nos-cocktails .cocktails-desalterants .tropical h2 {
+  border-bottom: solid 0.1rem white;
+}
+.section-recettes .nos-cocktails .cocktails-desalterants .tropical ul {
+  display: flex;
+  justify-content: space-between;
+}
+.section-recettes .nos-cocktails .cocktails-desalterants .tropical ul li {
+  list-style-type: none;
+}
+.section-recettes .nos-cocktails .cocktails-desalterants .tropical ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nos-cocktails .cocktails-energisants div h2 {
+  border-bottom: solid 0.1rem white;
+}
+.nos-cocktails .cocktails-energisants div ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nos-cocktails .cocktails-energisants div ul li {
+  list-style-type: none;
+}
+.nos-cocktails .cocktails-energisants div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.section-references .container .titre-references {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 3rem 0rem;
 }
 .section-references .container .trois-boissons {
   display: flex;
   flex-direction: column;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0rem 2rem;
 }
-.section-references .container .trois-boissons img {
-  border-top: solid 1px black;
+@media screen and (min-width: 991px) {
+  .section-references .container .trois-boissons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.section-references .container .trois-boissons div {
+  font-size: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 991px) {
+  .section-references .container .trois-boissons div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.section-references .container .trois-boissons div div {
+  border-bottom: solid 2px black;
+  width: 40%;
+  text-align: left;
+}
+.section-references .container .trois-boissons div img {
+  padding-top: 1rem;
+  max-width: 32rem;
+  width: 60%;
+}
+.section-references .container .toutes-les-marques {
+  margin: 3rem 0rem;
+  text-align: center;
+}
+.section-references .container .publicites .publicites-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 120rem;
+  align-items: center;
+}
+.section-references .container .publicites .publicites-container .publicite-objet {
+  border-bottom: solid 2px black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.section-references .container .publicites .publicites-container .publicites-images {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 991px) {
+  .section-references .container .publicites .publicites-container .publicites-images {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 * {
