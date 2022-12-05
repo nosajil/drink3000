@@ -186,11 +186,6 @@ nav {
 }
 nav .logo {
   font-size: 3rem;
-  text-align: center;
-  width: 100%;
-}
-nav .section-nav {
-  visibility: collapse;
 }
 nav .section-nav ul {
   display: flex;
