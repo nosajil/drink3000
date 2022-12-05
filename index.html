@@ -12,11 +12,11 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo container">
+        <nav class="bg-transparent" id="nav">
+            <div class="logo container text-align" id="logo">
                 <p><i class="fa-solid fa-martini-glass"></i> Drink 3000</p>
             </div>
-            <div class="section-nav">
+            <div class="section-nav hidden">
                 <ul>
                     <li><a href="#">Recettes</a></li>
                     <li><a href="#">References</a></li>
@@ -37,43 +37,62 @@
             <div>recettes</div>
         </div>
         <div class="energisantes-desalterantes">
-            <button>énergisantes</button>
-            <button>désaltérantes</button>
+            <button id="btn-energy" value="energy">énergisantes</button>
+            <button id="btn-desalt" value="desalt">désaltérantes</button>
         </div>
         <div class="nos-cocktails">
             <div class="cocktails-energisants">
-                <div class="original boisson">
+                <div class="original boisson energisante">
                     <h2>Original </h2>
-                    <p>Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
+                    <p class="text-energy">Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
                     <ul>
-                        <li><a class="infos" href="">Plus d'infos</a></li>
-                        <li><button href=""class="select-link" data-name="original">sélectionner</button></li>
+                        <li class="cap-letter disactivated"><a class="infos energisante-btn" href="">Plus d'infos</a></li>
+                        <li class="cap-letter"><button href=""class="select-link" data-name="original">sélectionner</button></li>
                     </ul>
                 </div>
-                <div class="pink-tonic boisson">
+                <!-- <div class="original energisante">
+                    <h2>Original<i></i></h2>
+                    <p >Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
+                    <ul>
+                        <li class="cap-letter disactivated"><a class="energisante-btn" href="">Plus d'infos</a></li>
+                        <li class="cap-letter"><a href="">sélectionner</a></li>
+                    </ul>
+                </div> -->
+                <div class="pink-tonic energisante boisson">
                     <h2>Pink Tonic<i></i></h2>
-                    <p>Boisson énergisante gazeuse, à la caféine et sans alcool</p>
+                    <p class="text-energy">Boisson énergisante gazeuse, à la caféine et sans alcool</p>
                     <ul>
                         <li><a class="infos" href="">Plus d'infos</a></li>
                         <li><button href=""class="select-link" data-name="pink-tonic">sélectionner</button></li>
                     </ul>
                 </div>
-                <div class="mojito boisson">
+                <div class="mojito boisson energisante">
                     <h2>Mojito<i></i></h2>
-                    <p>Boisson énergisante gazeuse, saveur Mojito et avec caféine.</p>
+                    <p class="text-energy">Boisson énergisante gazeuse, saveur Mojito et avec caféine.</p>
+                    <ul>
+                        <li class="cap-letter disactivated "><a class="infos energisante-btn" href="">Plus d'infos</a></li>
+                        <li class="cap-letter"><button href="" class="select-link" data-name="mojito">sélectionner</button></li>
+                    </ul>
+                </div>
+                <!-- <div class="mojito energisante">
+                    <h2>Mojito<i></i></h2>
+                    <p class="text-energy">Boisson énergisante gazeuse, saveur Mojito et avec caféine.</p>
                     <ul>
                         <li><a class="infos" href="">Plus d'infos</a></li>
                         <li><button href="" class="select-link"data-name="mojito">sélectionner</button></li>
+                        <li class="cap-letter disactivated "><a class="energisante-btn" href="">Plus d'infos</a></li>
+                        <li class="cap-letter"><a href="">sélectionner</a></li>
                     </ul>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
             <div class="cocktails-desalterants">
                 <div class="tropical boisson">
+                <div class="tropical desalterante">
                     <h2>Tropical<i></i></h2>
-                    <p>Boisson énergisante gazeuse, saveur Tropical sans caféine.</p>
+                    <p class="text-desalt">Boisson énergisante gazeuse, saveur Tropical sans caféine.</p>
                     <ul>
-                        <li><a class="infos" href="">Plus d'infos</a></li>
-                        <li><button href=""class="select-link"data-name="tropical">sélectionner</button></li>
+                        <li class="cap-letter disactivated" ><a class="infos desalterante-btn" href="">Plus d'infos</a></li>
+                        <li class="cap-letter"><button href=""class="select-link"data-name="tropical">sélectionner</button></li>
                     </ul>
                 </div>
             </div>
