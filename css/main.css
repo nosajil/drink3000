@@ -15,6 +15,12 @@
   flex-direction: column;
   text-align: center;
 }
+@media screen and (min-width: 991px) {
+  .section-recettes .energisantes-desalterantes {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .section-recettes .energisantes-desalterantes button {
   background-color: rgb(180, 179, 179);
   border-radius: 1rem;
@@ -26,6 +32,12 @@
 .section-recettes .nos-cocktails {
   padding: 0 1rem;
   color: white;
+}
+@media screen and (min-width: 991px) {
+  .section-recettes .nos-cocktails .cocktails-energisants {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .section-recettes .nos-cocktails .cocktails-energisants .original {
   background-color: red;
@@ -50,6 +62,11 @@
   border-radius: 2rem;
   margin: 1rem;
   padding: 1rem;
+}
+@media screen and (min-width: 991px) {
+  .section-recettes .nos-cocktails .cocktails-desalterants .tropical {
+    width: 33.3%;
+  }
 }
 .section-recettes .nos-cocktails .cocktails-desalterants .tropical h2 {
   border-bottom: solid 0.1rem white;
@@ -81,6 +98,17 @@
   color: white;
 }
 
+.boisson-selectionnee {
+  background-color: rgb(213, 197, 197);
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boisson-selectionnee .choix {
+  text-transform: uppercase;
+  padding: 1rem;
+}
 .section-references .container .titre-references {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -186,6 +214,9 @@ nav {
 }
 nav .logo {
   font-size: 3rem;
+}
+nav .section-nav {
+  visibility: collapse;
 }
 nav .section-nav ul {
   display: flex;

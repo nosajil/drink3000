@@ -16,6 +16,10 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        @media screen and (min-width: 991px) {
+            display: flex;
+            flex-direction: row;
+             }
         
     
         button{
@@ -25,12 +29,19 @@
             margin: 0.2rem auto;
             padding: 1rem;
             text-transform: uppercase;
+            
         }
     }
     .nos-cocktails{ padding: 0 1rem;
             color: white;
         
         .cocktails-energisants{
+            
+            @media screen and (min-width: 991px) {
+                display: flex;
+                flex-direction: row;
+                
+                }
            
             .original{
                 background-color: red;
@@ -57,6 +68,9 @@
                 border-radius:2rem ;
                 margin: 1rem;
                 padding: 1rem;
+                @media screen and (min-width: 991px) {
+                    width: 33.3%;
+                    }
                 h2{border-bottom: solid 0.1rem white;}
             
                 ul{display: flex;
@@ -76,7 +90,8 @@
 .nos-cocktails{
     .cocktails-energisants{
         div{
-                h2{border-bottom: solid 0.1rem white;}
+                h2{border-bottom: solid 0.1rem white;
+                    }
             
                 ul{display: flex;
                     justify-content: space-between;  
@@ -87,6 +102,18 @@
                          }
                     }
                 }}}}
+
+.boisson-selectionnee {
+    background-color: rgb(213, 197, 197);
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .choix{text-transform: uppercase;
+    padding: 1rem;}
+    .boisson-aucune{}
+}
 
 .section-references {
     .container {
